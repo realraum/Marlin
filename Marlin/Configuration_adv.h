@@ -435,7 +435,7 @@
 //#define DIGIPOT_MOTOR_CURRENT { 135,135,135,135,135 }   // Values 0-255 (RAMBO 135 = ~0.75A, 185 = ~1A)
 
 //2017-10-30 Values tested to work well with LulzBotTAZ4 in r3
-#define DIGIPOT_MOTOR_CURRENT  {125,125,195,135,135}   // Values 0-255 (RAMBO 135 = ~0.75A, 185 = ~1A)
+#define DIGIPOT_MOTOR_CURRENT  {125,125,240,135,135}   // Values 0-255 (RAMBO 135 = ~0.75A, 185 = ~1A)
 
 //#define DAC_MOTOR_CURRENT_DEFAULT { 70, 80, 90, 80 }    // Default drive percent - X, Y, Z, E axis
 
