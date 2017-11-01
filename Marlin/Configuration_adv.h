@@ -251,7 +251,8 @@
 
 // If you want endstops to stay on (by default) even when not homing
 // enable this option. Override at any time with M120, M121.
-//#define ENDSTOPS_ALWAYS_ON_DEFAULT
+//2017-10-30  r3: fgenesis wants this
+#define ENDSTOPS_ALWAYS_ON_DEFAULT
 
 // @section extras
 
@@ -432,6 +433,10 @@
  */
 //#define PWM_MOTOR_CURRENT { 1300, 1300, 1250 }          // Values in milliamps
 //#define DIGIPOT_MOTOR_CURRENT { 135,135,135,135,135 }   // Values 0-255 (RAMBO 135 = ~0.75A, 185 = ~1A)
+
+//2017-10-30 Values tested to work well with LulzBotTAZ4 in r3
+#define DIGIPOT_MOTOR_CURRENT  {125,125,195,135,135}   // Values 0-255 (RAMBO 135 = ~0.75A, 185 = ~1A)
+
 //#define DAC_MOTOR_CURRENT_DEFAULT { 70, 80, 90, 80 }    // Default drive percent - X, Y, Z, E axis
 
 // Uncomment to enable an I2C based DIGIPOT like on the Azteeg X3 Pro
@@ -455,7 +460,7 @@
 // @section lcd
 
 // Include a page of printer information in the LCD Main Menu
-//#define LCD_INFO_MENU
+#define LCD_INFO_MENU
 
 // Scroll a longer status message into view
 //#define STATUS_MESSAGE_SCROLLING
@@ -464,7 +469,7 @@
 //#define LCD_DECIMAL_SMALL_XY
 
 // The timeout (in ms) to return to the status screen from sub-menus
-//#define LCD_TIMEOUT_TO_STATUS 15000
+#define LCD_TIMEOUT_TO_STATUS 15000
 
 #if ENABLED(SDSUPPORT)
 
