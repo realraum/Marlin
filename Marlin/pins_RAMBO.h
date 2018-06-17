@@ -130,6 +130,8 @@
 #define FAN1_PIN            6
 #define FAN2_PIN            2
 
+#define CONTROLLER_FAN_PIN FAN2_PIN
+
 //
 // Misc. Functions
 //
